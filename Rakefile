@@ -32,7 +32,6 @@ begin
     gemspec.add_dependency('rdiscount', '>= 1.6.3.2')
     gemspec.add_dependency('open4', '>= 1.0.1')
     gemspec.add_dependency('albino', '>= 1.0')
-    gemspec.add_dependency('activesupport', '>= 3.0.0.beta4')
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: gem install jeweler"

@@ -1,6 +1,6 @@
 require 'cgi'
-require 'activesupport'
 
+require 'jack/string'
 require 'jack/highlight'
 require 'jack/html'
 require 'jack/markdown'
