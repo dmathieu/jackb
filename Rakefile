@@ -17,3 +17,18 @@ Spec::Rake::SpecTask.new('spec') do |t|
   t.spec_files = FileList['spec/**/*.rb']
   t.spec_opts = ['-cfs']
 end
+
+begin
+  require 'jeweler'
+  
+  Jeweler::Tasks.new do |gemspec|
+    gemspec.name = "jack"
+    gemspec.summary = "Is your content in HTML or Markdown ?"
+    gemspec.description = "Takes some content and parses it depending of the format your specify (HTML or Markdown)"
+    gemspec.email = "42@dmathieu.com"
+    gemspec.homepage = "http://github.com/dmathieu/jack"
+    gemspec.authors = ["Damien MATHIEU"]
+  end
+rescue LoadError
+  puts "Jeweler not available. Install it with: gem install jeweler"
+end
