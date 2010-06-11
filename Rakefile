@@ -22,7 +22,7 @@ begin
   require 'jeweler'
   
   Jeweler::Tasks.new do |gemspec|
-    gemspec.name = "jack"
+    gemspec.name = "jackb"
     gemspec.summary = "Is your content in HTML or Markdown ?"
     gemspec.description = "Takes some content and parses it depending of the format your specify (HTML or Markdown)"
     gemspec.email = "42@dmathieu.com"
