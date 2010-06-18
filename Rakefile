@@ -26,7 +26,7 @@ begin
     gemspec.summary = "Is your content in HTML or Markdown ?"
     gemspec.description = "Takes some content and parses it depending of the format your specify (HTML or Markdown)"
     gemspec.email = "42@dmathieu.com"
-    gemspec.homepage = "http://github.com/dmathieu/jack"
+    gemspec.homepage = "http://github.com/dmathieu/jackb"
     gemspec.authors = ["Damien MATHIEU"]
     
     gemspec.add_dependency('rdiscount', '>= 1.6.3.2')
