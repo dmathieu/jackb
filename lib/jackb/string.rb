@@ -4,7 +4,7 @@ module Jackb
       klass.class_eval do
         def camelize
           self.split(/[^a-z0-9]/i).map{|w| w.capitalize}.join
-        end
+        end unless self.respond_to? :camelize
         
         
         # Ruby 1.9 introduces an inherit argument for Module#const_get and
@@ -20,7 +20,7 @@ module Jackb
               constant = constant.const_defined?(name) ? constant.const_get(name) : constant.const_missing(name)
             end
             constant
-          end
+          end unless self.respond_to? :constantize
         else
           def constantize
             names = self.split('::')
@@ -31,7 +31,7 @@ module Jackb
               constant = constant.const_defined?(name, false) ? constant.const_get(name) : constant.const_missing(name)
             end
             constant
-          end
+          end unless self.respond_to? :constantize
         end
       end
     end
