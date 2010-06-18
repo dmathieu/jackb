@@ -1,5 +1,5 @@
-module Jack
-  class Html < Jack::Highlight
+module Jackb
+  class Html < Jackb::Highlight
     attr_reader   :content
     
     def initialize(content)

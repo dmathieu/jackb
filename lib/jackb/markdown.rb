@@ -1,7 +1,7 @@
 require 'rdiscount'
 
-module Jack
-  class Markdown < Jack::Highlight
+module Jackb
+  class Markdown < Jackb::Highlight
     attr_reader   :content, :formatted_content
     
     def initialize(content)

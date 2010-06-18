@@ -1,6 +1,6 @@
 require 'albino'
 
-module Jack
+module Jackb
   
   class Highlight
     def self.render(content)

@@ -1,4 +1,4 @@
-module Jack
+module Jackb
   module String
     def self.included(klass)
       klass.class_eval do
@@ -37,4 +37,4 @@ module Jack
     end
   end
 end
-String.send(:include, Jack::String)
+String.send(:include, Jackb::String)
