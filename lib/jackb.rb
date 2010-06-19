@@ -1,6 +1,6 @@
 require 'cgi'
 
-require 'jackb/string'
+require 'active_support/core_ext'
 require 'jackb/highlight'
 require 'jackb/html'
 require 'jackb/markdown'
