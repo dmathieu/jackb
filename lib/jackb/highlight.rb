@@ -1,3 +1,6 @@
+require 'net/http'
+require 'uri'
+
 module Jackb
   
   class Highlight
@@ -7,10 +10,11 @@ module Jackb
   
     def render(content)
       content.gsub(highlight_regex) do |s|
-        #
-        # Deactivated for now
-        #
-        s
+        code, lang = unescape($2), extract_lang($1)
+        Net::HTTP.post_form(
+          URI.parse('http://pygments.appspot.com/'),
+          {:lang => lang, :code => code}
+        ).body
       end
     end
   
