@@ -9,6 +9,6 @@ describe Jackb::Markdown do
   
   it 'should highlight the code' do
     Jackb::Markdown.new("Hey!\n\n    <%= \"test\" %>").render.
-    should eql("<p>Hey!</p>\n\n#{Albino.new('<%= "test" %>', :ruby).to_s}\n")
+    should eql("<p>Hey!</p>\n\n#{Albino.new('<%= "test" %>', :ruby).to_s}\n\n")
   end
 end

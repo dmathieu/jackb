@@ -3,11 +3,11 @@ require 'spec_helper'
 describe Jackb::Highlight do
   describe 'code highlighting' do
     it 'should highlight the code' do
-      Jackb::Highlight.render('<pre><code><%= "test" %></code></pre>').should eql(Albino.new('<%= "test" %>', :ruby).to_s)
+      Jackb::Highlight.render('<pre><code><%= "test" %></code></pre>').should eql(Albino.new('<%= "test" %>', :ruby).to_s + "\n")
     end
     
     it 'should highlight the code in an other language' do
-      Jackb::Highlight.render('<pre><code language="python"><%= "test" %></code></pre>').should eql(Albino.new('<%= "test" %>', :python).to_s)
+      Jackb::Highlight.render('<pre><code language="python"><%= "test" %></code></pre>').should eql(Albino.new('<%= "test" %>', :python).to_s + "\n")
     end
     
     describe 'unescape' do
