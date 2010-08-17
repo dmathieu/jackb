@@ -1,5 +1,3 @@
-require 'albino'
-
 module Jackb
   
   class Highlight
