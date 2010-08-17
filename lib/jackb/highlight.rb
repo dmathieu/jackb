@@ -9,7 +9,10 @@ module Jackb
   
     def render(content)
       content.gsub(highlight_regex) do |s|
-        Albino.new(unescape($2), extract_lang($1))
+        #
+        # Deactivated for now
+        #
+        s
       end
     end
   
