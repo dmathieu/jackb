@@ -6,4 +6,10 @@ rescue LoadError
   Bundler.setup
 end
 
+#
+# We're using Albino only for the tests
+# In order to avoid calling pygments.appspot every time
+# It's not required to launch the app
+require 'albino'
+
 require 'lib/jackb'

@@ -9,6 +9,10 @@ gem 'tzinfo'
 
 gem 'jeweler'
 
+group :development do
+  gem 'albino'
+end
+
 group :test do
   gem 'test-unit', '1.2.3'
   gem 'rspec'

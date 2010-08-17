@@ -2,6 +2,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     activesupport (3.0.0.beta4)
+    albino (1.0)
     gemcutter (0.6.1)
     git (1.2.5)
     hoe (2.6.1)
@@ -28,6 +29,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport (= 3.0.0.beta4)
+  albino
   i18n
   jeweler
   open4
