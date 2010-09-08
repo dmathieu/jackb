@@ -1,3 +1,4 @@
+# encoding: UTF-8
 begin
   require File.expand_path('../.bundle/environment', __FILE__)
 rescue LoadError

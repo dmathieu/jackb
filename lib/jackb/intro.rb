@@ -1,3 +1,4 @@
+# encoding: UTF-8
 module Jackb
   class Intro
     attr_reader   :content

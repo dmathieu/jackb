@@ -1,3 +1,4 @@
+# encoding: UTF-8
 module Jackb
   class Html < Jackb::Highlight
     attr_reader   :content
