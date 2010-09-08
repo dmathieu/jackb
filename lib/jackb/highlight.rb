@@ -15,7 +15,7 @@ module Jackb
         Net::HTTP.post_form(
           URI.parse('http://pygments.appspot.com/'),
           {:lang => lang, :code => code}
-        ).body
+        ).body.force_encoding("UTF-8")
       end
     end
   
