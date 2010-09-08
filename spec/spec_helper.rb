@@ -1,5 +1,4 @@
 # encoding: UTF-8
-
 begin
   require File.expand_path('../.bundle/environment', __FILE__)
 rescue LoadError
@@ -7,6 +6,7 @@ rescue LoadError
   require "bundler"
   Bundler.setup
 end
+$LOAD_PATH << Dir.pwd
 
 #
 # We're using Albino only for the tests
