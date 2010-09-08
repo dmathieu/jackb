@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{jackb}
-  s.version = "0.0.6.beta"
+  s.version = "0.0.6.beta.2"
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.authors = ["Damien MATHIEU"]
-  s.date = %q{2010-08-17}
+  s.date = %q{2010-09-08}
   s.description = %q{Takes some content and parses it depending of the format your specify (HTML or Markdown)}
   s.email = %q{42@dmathieu.com}
   s.extra_rdoc_files = [
@@ -27,9 +27,11 @@ Gem::Specification.new do |s|
      "lib/jackb.rb",
      "lib/jackb/highlight.rb",
      "lib/jackb/html.rb",
+     "lib/jackb/intro.rb",
      "lib/jackb/markdown.rb",
      "spec/lib/highlight_spec.rb",
      "spec/lib/html_spec.rb",
+     "spec/lib/intro_spec.rb",
      "spec/lib/jackb_spec.rb",
      "spec/lib/markdown_spec.rb",
      "spec/spec_helper.rb"
@@ -40,10 +42,11 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Is your content in HTML or Markdown ?}
   s.test_files = [
-    "spec/lib/jackb_spec.rb",
-     "spec/lib/markdown_spec.rb",
+    "spec/lib/highlight_spec.rb",
      "spec/lib/html_spec.rb",
-     "spec/lib/highlight_spec.rb",
+     "spec/lib/intro_spec.rb",
+     "spec/lib/jackb_spec.rb",
+     "spec/lib/markdown_spec.rb",
      "spec/spec_helper.rb"
   ]
 
